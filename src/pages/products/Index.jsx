@@ -18,7 +18,6 @@ const ProductsPage = () => {
   };
 
   const handleEdit = (index, newData) => {
-
     dispatch(editRow({ index, data: newData }));
   };
 
@@ -40,7 +39,7 @@ const ProductsPage = () => {
             {...{
               dropdownMenu: rows,
               data: rows,
-              handleDelete,
+              handleDelete: handleDelete,
               handleEdit: handleEdit
             }}
           />

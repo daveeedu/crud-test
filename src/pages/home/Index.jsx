@@ -32,7 +32,7 @@ const HomePage = () => {
         </div>
       </div> 
 
-      <div className="md:flex md:justify-between w-[90%] m-auto py-8">
+      <div className="md:flex md:justify-between w-[90%] m-auto mb-14 py-8">
         <div className="lg:w-[20%] w-[100%]">
           <h4 className='text-[var(--c-dark-10)] font-bold mb-4'>Header Text</h4>
           <p className='text-[var(--text-bg)] mb-4 md:mb-0'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum maiores error animi nihil in, reiciendis quam quisquam quibusdam adipisci? Molestiae atque officia magnam reiciendis porro esse nam temporibus ex culpa.</p>
