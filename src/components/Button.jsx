@@ -10,7 +10,7 @@ const withWrapperClass = (WrappedComponent) => {
   };
 };
 
-const Button = ({ value, onClick, children }) => {
+const Button = ({ value, onClick }) => {
   return (
     <button onClick={onClick}>
       {value}

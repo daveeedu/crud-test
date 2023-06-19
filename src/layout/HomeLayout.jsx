@@ -1,26 +1,33 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import config from "../utils/config";
 import WrappedButton from "../components/Button";
+import { useLocation } from 'react-router-dom';
 
 const { routes } = config;
 
 const tabs = [
   { name: "Home", link: routes.home, index: 0 },
-  { name: "About Us", link: "", index: 1 },
-  { name: "Events", link: "", index: 2 },
-  { name: "Projects", link: routes.product, index: 3 },
-  { name: "Contact", link: "", index: 4 },
+  { name: "Projects", link: routes.product, index: 1 },
+  { name: "About Us", link: "", index: 2 },
+  { name: "Events", link: "", index: 3 },
+  
 ];
 
 const HomeLayout = ({ children }) => {
   const [showMenu, setShowMenu] = useState(false);
   const [activeTab, setActiveTab] = useState(0);
+  const location = useLocation();
 
   const handleToggleMenu = (toggle) => {
     setShowMenu(toggle !== undefined ? toggle : !showMenu);
   };
+
+  useEffect(() => {
+    const currentTab = tabs.find((tab) => tab.link === location.pathname);
+    setActiveTab(currentTab?.index || 0);
+  }, [location.pathname]);
 
   const handleTabClick = (index) => {
     setActiveTab(index);

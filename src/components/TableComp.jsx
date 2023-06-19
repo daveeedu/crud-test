@@ -71,12 +71,12 @@ export default function Table({ data, handleDelete, handleEdit }) {
                       <WrappedButton
                         value="Save"
                         onClick={() => handleSaveClick(index)}
-                        wrapperClass="bg-black py-2 text-[var(--c-white-2)] rounded-md px-4 text-center mb-5 md:mb-0 mr-2"
+                        wrapperClass="bg-black py-1 text-[var(--c-white-2)] rounded-md px-2 text-center my-1 md:mb-0 mr-2 text-[15px]"
                       />
                       <WrappedButton
                         value="Cancel"
                         onClick={() => handleCancelClick(index)}
-                        wrapperClass="bg-var(--c-white-2) py-2 px-4 text-black rounded-md border-2 border-black text-center"
+                        wrapperClass="bg-var(--c-white-2) py-1 px-2 text-black rounded-md border-2 border-black text-center text-[13px]"
                       />
                     </>
                   )}
@@ -90,12 +90,12 @@ export default function Table({ data, handleDelete, handleEdit }) {
                             [index]: { ...row },
                           }))
                         }
-                        wrapperClass="bg-black py-2 text-[var(--c-white-2)] rounded-md px-4 text-center mb-5 md:mb-0 mr-2"
+                        wrapperClass="bg-black py-1 text-[var(--c-white-2)] rounded-md px-2 text-center my-1  mr-2 text-[15px]"
                       />
                       <WrappedButton
                         value="Delete"
                         onClick={() => handleDelete(index)}
-                        wrapperClass="bg-red-600 py-2 px-4 text-[var(--c-white-2)] rounded-md text-center"
+                        wrapperClass="bg-red-600 py-1 px-2 text-[var(--c-white-2)] rounded-md text-center my-1 text-[15px]"
                       />
                     </>
                   )}

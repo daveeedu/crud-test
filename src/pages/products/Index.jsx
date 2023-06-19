@@ -43,8 +43,8 @@ const ProductsPage = () => {
               handleEdit: handleEdit
             }}
           />
-          <div className='md:w-[500px] w-[95%] m-auto h-[500px] bg-[var(--cc-grey-1)] md:mt-14'>
-            <h1 className='text-center mt-14 mb-8 font-bold text-4xl'>Header Text</h1>
+          <form className='md:w-[500px] w-[95%] m-auto h-[500px] bg-[var(--cc-grey-1)] mt-14'>
+            <h1 className='text-center pt-10 mb-8 font-bold text-4xl'>Header Text</h1>
             <p className='text-center mb-14 w-[80%] m-auto'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit totam </p>
             <Input {...{
               placeholder: "Name",
@@ -64,7 +64,7 @@ const ProductsPage = () => {
            wrapperClass="bg-black py-2 px-4 text-[var(--c-white-2)] rounded-md w-[80%] m-auto text-center"
           />
 
-          </div>
+          </form>
         </div>
         
     </HomeLayout>
