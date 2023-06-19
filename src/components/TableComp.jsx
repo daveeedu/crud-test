@@ -53,7 +53,7 @@ export default function Table({ data, handleDelete, handleEdit }) {
                         name={key}
                         value={editedData[index][key]}
                         onChange={(event) => handleInputChange(event, index)}
-                        className="border-2 border-gray-300 p-2 rounded-md w-full focus:outline-none focus:border-[var(--c-blue-1)]"
+                        className="border-2 border-gray-300 px-2 py-1 rounded-md w-full focus:outline-none focus:border-[var(--c-blue-1)]"
                       />
                     </td>
                   ) : (
@@ -71,7 +71,7 @@ export default function Table({ data, handleDelete, handleEdit }) {
                       <WrappedButton
                         value="Save"
                         onClick={() => handleSaveClick(index)}
-                        wrapperClass="bg-black py-1 text-[var(--c-white-2)] rounded-md px-2 text-center my-1 md:mb-0 mr-2 text-[15px]"
+                        wrapperClass="bg-black py-1 text-[var(--c-white-2)] rounded-md px-2 text-center my-1  mr-2 text-[15px]"
                       />
                       <WrappedButton
                         value="Cancel"
