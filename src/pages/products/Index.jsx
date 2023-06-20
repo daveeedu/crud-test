@@ -114,7 +114,7 @@ const ProductsPage = () => {
             </p>
           )}
           <WrappedButton
-            value="Call to Action"
+            value="Add Product"
             type="submit"
             wrapperClass="bg-black py-2 px-4 mt-8 text-[var(--c-white-2)] rounded-md w-[80%] m-auto text-center"
           />
